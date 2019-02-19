@@ -8,7 +8,7 @@ from . import basequotation
 class Sina(basequotation.BaseQuotation):
     """新浪免费行情获取"""
 
-    max_num = 800
+    max_num = 60
     grep_detail = re.compile(
         r"(\d+)=([^\s][^,]+?)%s%s" % (r",([\.\d]+)" * 29, r",([-\.\d:]+)" * 2)
     )
